@@ -1,0 +1,11 @@
+tempfile.txt
+.DS_Store #in MAC , used by OS
+*.zip
+*.gz
+log/*.log # anything ends with log
+log/*.log.[0-9] #anything ends with 0 to 9
+assets/photoshop/  #everything in photoshop folder
+assets/videos/ # everything in videos folder
+!assets/videos/tour_*.mp4 # don't ignore any thing that start with tour_ and ends with .mp4
+# Question: would log/archive/access.log be ignored? No.
+# Reason: log/*.log would apply to files inside log/ not to folder
